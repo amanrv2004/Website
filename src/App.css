@@ -1,0 +1,43 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.content-container {
+  padding-top: 56px; 
+}
+/* This class adds padding to content to prevent it from going under the fixed navbar */
+.content-container {
+  padding-top: 56px; /* Adjust this value if your navbar's height changes */
+  min-height: calc(100vh - 110px); /* Adjust to make footer stick to bottom if content is short */
+  display: flex; /* For basic layout */
+  flex-direction: column; /* For basic layout */
+}
+
+.main-div {
+  /* This class was in your original Main.jsx but didn't have styles. You can add them here. */
+  /* For example, if you want some top margin for the categories section. */
+  margin-top: 20px;
+}
+
+/* Ensure the footer is at the bottom */
+footer {
+  margin-top: auto; /* Pushes the footer to the bottom if content is short */
+}

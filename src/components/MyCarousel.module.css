@@ -1,0 +1,20 @@
+.carouselImage {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carouselImage {
+    max-height: 250px;
+  }
+
+  .carouselCaption {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.divn {
+  margin-top: 100px;
+}
